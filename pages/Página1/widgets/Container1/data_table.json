@@ -2,8 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "allowAddNewRow": false,
   "animateLoading": true,
+  "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "",
+  "borderWidth": "8",
   "bottomRow": 88,
   "boxShadow": "none",
   "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
@@ -136,6 +137,9 @@
     },
     {
       "key": "primaryColumns.customColumn2.menuColor"
+    },
+    {
+      "key": "borderColor"
     }
   ],
   "dynamicPropertyPathList": [

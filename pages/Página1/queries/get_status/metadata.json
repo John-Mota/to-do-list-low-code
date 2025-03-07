@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "67cae69420c63b4378697221_5aaf5c20-c2b2-4415-886d-99c498660fe1",
-  "id": "Página1_Total_record_P_gina11",
+  "gitSyncId": "67cb3305c5b73a205202ade9_a5fa0b7c-0fb9-4671-89d4-cb92fe83c2cb",
+  "id": "Página1_get_status",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -15,7 +15,7 @@
         },
         "pagination": {
           "data": {
-            "limit": "20",
+            "limit": "60",
             "offset": "0"
           }
         },
@@ -52,9 +52,7 @@
           "data": {
             "children": [
               {
-                "condition": "CONTAINS",
-                "key": "{{Table1.searchText ? \"undefined\" : \"\"}}",
-                "value": "{{Table1.searchText}}"
+                "condition": "LT"
               }
             ],
             "condition": "AND"
@@ -71,13 +69,9 @@
       "name": "tasks",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.where.data"
-      }
-    ],
-    "executeOnLoad": false,
-    "name": "Total_record_P_gina11",
+    "dynamicBindingPathList": [],
+    "executeOnLoad": true,
+    "name": "get_status",
     "pageId": "Página1",
     "userSetOnLoad": false
   }
