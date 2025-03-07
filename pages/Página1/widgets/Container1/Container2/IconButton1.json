@@ -1,0 +1,39 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 6,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "buttonColor": "#0ca745",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "plus",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "z98j66btsv",
+  "leftColumn": 58,
+  "minWidth": 50,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 49,
+  "mobileRightColumn": 53,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onClick": "{{showModal(Insert_Modal.name);}}",
+  "parentColumnSpace": 18.578125,
+  "parentId": "b6dv7l8z4y",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 61,
+  "topRow": 2,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "veb0wwryab",
+  "widgetName": "IconButton1"
+}
