@@ -1,6 +1,7 @@
 {
   "gitSyncId": "67cae69420c63b4378697221_db01376b-0029-43d6-b970-6ff0a3770db0",
   "unpublishedPage": {
+    "customSlug": "",
     "layouts": [
       {
         "dsl": {
@@ -26,7 +27,7 @@
         }
       }
     ],
-    "name": "Página1",
-    "slug": "pagina1"
+    "name": "To do list",
+    "slug": "to-do-list"
   }
 }

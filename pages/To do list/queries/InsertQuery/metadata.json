@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "67cae69420c63b4378697221_aa59fbd4-ba64-43d6-abfd-f4047be41646",
-  "id": "Página1_DeleteQuery",
+  "gitSyncId": "67cae69420c63b4378697221_b70feda9-6321-4c5e-8e37-24a5269c3818",
+  "id": "To do list_InsertQuery",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -8,24 +8,13 @@
       "encodeParamsToggle": true,
       "formData": {
         "command": {
-          "componentData": "DELETE_ONE",
-          "data": "DELETE_ONE",
+          "componentData": "INSERT_ONE",
+          "data": "INSERT_ONE",
           "viewType": "component"
         },
         "entityType": {
           "componentData": "ROWS",
           "data": "ROWS",
-          "viewType": "component"
-        },
-        "pagination": {
-          "componentData": {
-            "limit": "{{data_table.pageSize}}",
-            "offset": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
-          },
-          "data": {
-            "limit": "{{data_table.pageSize}}",
-            "offset": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
-          },
           "viewType": "component"
         },
         "projection": {
@@ -39,9 +28,9 @@
         "range": {
           "data": ""
         },
-        "rowIndex": {
-          "componentData": "{{data_table.triggeredRow.rowIndex}}",
-          "data": "{{data_table.triggeredRow.rowIndex}}",
+        "rowObjects": {
+          "componentData": "{{insert_form.formData}}",
+          "data": "{{insert_form.formData}}",
           "viewType": "component"
         },
         "sheetName": {
@@ -55,26 +44,21 @@
           "viewType": "component"
         },
         "smartSubstitution": {
-          "componentData": false,
-          "data": false,
+          "componentData": true,
+          "data": true,
           "viewType": "component"
         },
         "tableHeaderIndex": {
           "componentData": "1",
           "data": "1",
           "viewType": "component"
-        },
-        "where": {
-          "data": {
-            "condition": "AND"
-          }
         }
       },
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
           "key": "method",
-          "value": "DELETE_ROW"
+          "value": "APPEND"
         },
         {
           "key": "sheetUrl",
@@ -98,7 +82,7 @@
         },
         {
           "key": "rowLimit",
-          "value": "{{data_table.pageSize}}"
+          "value": ""
         },
         {
           "key": "sheetName",
@@ -106,17 +90,18 @@
         },
         {
           "key": "rowOffset",
-          "value": "{{(data_table.pageNo - 1) * data_table.pageSize}}"
+          "value": ""
         },
         {
-          "key": "rowObject"
+          "key": "rowObject",
+          "value": "{{insert_form.formData}}"
         },
         {
           "key": "rowObjects"
         },
         {
           "key": "rowIndex",
-          "value": "{{data_table.triggeredRow.rowIndex}}"
+          "value": ""
         },
         {
           "key": "deleteFormat",
@@ -124,7 +109,7 @@
         },
         {
           "key": "smartSubstitution",
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -137,8 +122,8 @@
       "pluginId": "google-sheets-plugin"
     },
     "executeOnLoad": false,
-    "name": "DeleteQuery",
-    "pageId": "Página1",
+    "name": "InsertQuery",
+    "pageId": "To do list",
     "userSetOnLoad": false
   }
 }
