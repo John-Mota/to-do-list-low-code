@@ -4,8 +4,13 @@
   "animateLoading": true,
   "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+<<<<<<< HEAD:pages/To do list/widgets/Container1/data_table.json
   "borderWidth": "5",
   "bottomRow": 92,
+=======
+  "borderWidth": "8",
+  "bottomRow": 88,
+>>>>>>> develop:pages/Página1/widgets/Container1/data_table.json
   "boxShadow": "none",
   "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
   "childStylesheet": {
