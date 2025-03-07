@@ -1,7 +1,7 @@
 {
   "appIsExample": false,
   "appLayout": {
-    "type": "MOBILE"
+    "type": "DESKTOP"
   },
   "applicationDetail": {
     "appPositioning": {
@@ -17,6 +17,11 @@
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
   "color": "#FBF4ED",
+  "embedSetting": {
+    "height": "720px",
+    "showNavigationBar": true,
+    "width": "1024px"
+  },
   "evaluationVersion": 2,
   "icon": "smartphone",
   "pages": [
@@ -30,7 +35,7 @@
     }
   ],
   "unpublishedAppLayout": {
-    "type": "MOBILE"
+    "type": "DESKTOP"
   },
   "unpublishedApplicationDetail": {
     "appPositioning": {
