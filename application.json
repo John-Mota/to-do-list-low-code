@@ -23,14 +23,14 @@
     "width": "1024px"
   },
   "evaluationVersion": 2,
-  "icon": "smartphone",
+  "icon": "bag",
   "pages": [
     {
       "id": "Page1",
       "isDefault": true
     },
     {
-      "id": "Página1",
+      "id": "To do list",
       "isDefault": false
     }
   ],
