@@ -7,7 +7,7 @@
   "children": [
     {
       "borderRadius": "0px",
-      "bottomRow": 600,
+      "bottomRow": 720,
       "boxShadow": "none",
       "canExtend": true,
       "detachFromLayout": true,
@@ -54,6 +54,6 @@
   "type": "MODAL_WIDGET",
   "version": 2,
   "widgetId": "vmorzie6eq",
-  "widgetName": "Insert_Modal",
-  "width": 532
+  "widgetName": "newTask",
+  "width": 582
 }

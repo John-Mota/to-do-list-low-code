@@ -5,7 +5,7 @@
   "borderColor": "",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 59,
+  "bottomRow": 72,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -94,9 +94,6 @@
       "key": "sourceData"
     },
     {
-      "key": "schema.__root_schema__.children.rowIndex.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.borderRadius"
     },
     {
@@ -127,16 +124,10 @@
       "key": "schema.__root_schema__.children.rowIndex.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.id.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.id.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.id.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.task.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.task.borderRadius"
@@ -166,27 +157,17 @@
       "key": "schema.__root_schema__.children.priority.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.priority.borderRadius"
+      "key": "schema.__root_schema__.children.priority.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.priority.accentColor"
+      "key": "schema.__root_schema__.children.rowIndex.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.priority.borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.col5.defaultValue"
-    },
-    {
-      "key": "onSubmit"
-    },
-    {
-      "key": "borderRadius"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
@@ -200,7 +181,7 @@
   "isVisible": "true",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
-  "leftColumn": 0,
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{InsertQuery.run(\n\t() => SelectQuery.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
@@ -215,7 +196,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "SECONDARY"
   },
-  "rightColumn": 64,
+  "rightColumn": 63,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
@@ -225,35 +206,40 @@
       "cellBoxShadow": "none",
       "children": {
         "due_date": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "due_date",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(form.sourceData, form.formData, form.fieldState)}}",
+          "accessor": "date",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(form.sourceData, form.formData, form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
+          "closeOnSelection": false,
+          "convertToISO": false,
           "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.due_date))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
+          "dateFormat": "DD-MM-YYYY",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.due_date))(form.sourceData, form.formData, form.fieldState)}}",
+          "fieldType": "Datepicker",
           "identifier": "due_date",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
-          "label": "Due Date",
+          "label": "Data",
           "labelTextSize": "0.875rem",
+          "maxDate": "2121-12-31T18:29:00.000Z",
+          "minDate": "1920-12-31T18:30:00.000Z",
           "originalIdentifier": "due_date",
           "position": 4,
-          "sourceData": 1741132800000
+          "shortcuts": false,
+          "sourceData": 1741132800000,
+          "timePrecision": "minute"
         },
         "id": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(form.sourceData, form.formData, form.fieldState)}}",
           "accessor": "id",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(form.sourceData, form.formData, form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "",
           "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "id",
@@ -269,57 +255,58 @@
           "sourceData": 1
         },
         "priority": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(form.sourceData, form.formData, form.fieldState)}}",
           "accessor": "priority",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(form.sourceData, form.formData, form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.priority))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.priority))(form.sourceData, form.formData, form.fieldState)}}",
+          "fieldType": "Select",
           "identifier": "priority",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Priority",
           "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"Baixa\",\n    \"value\": \"baixa\"\n  },\n  {\n    \"label\": \"Média\",\n    \"value\": \"media\"\n  },\n  {\n    \"label\": \"Alta\",\n    \"value\": \"alta\"\n  }\n]",
           "originalIdentifier": "priority",
           "position": 5,
+          "serverSideFiltering": false,
           "sourceData": "Média"
         },
         "rowIndex": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "rowIndex",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(form.sourceData, form.formData, form.fieldState)}}",
+          "accessor": "Nova tarefa",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(form.sourceData, form.formData, form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.rowIndex))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.rowIndex + 1))(form.sourceData, form.formData, form.fieldState)}}",
           "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "rowIndex",
           "isCustomField": false,
-          "isDisabled": false,
+          "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Row Index",
+          "isVisible": false,
+          "label": "N° da task",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rowIndex",
           "position": 0,
           "sourceData": 0
         },
         "status": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(form.sourceData, form.formData, form.fieldState)}}",
           "accessor": "status",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(form.sourceData, form.formData, form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.status))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.status))(form.sourceData, form.formData, form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "status",
@@ -335,13 +322,13 @@
           "sourceData": "Pendente"
         },
         "task": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(form.sourceData, form.formData, form.fieldState)}}",
           "accessor": "task",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(form.sourceData, form.formData, form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.task))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "task",
@@ -358,7 +345,7 @@
         }
       },
       "dataType": "object",
-      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(form.sourceData, form.formData, form.fieldState)}}",
       "fieldType": "Object",
       "identifier": "__root_schema__",
       "isCustomField": false,
@@ -388,10 +375,10 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Insert Row",
-  "topRow": 0,
+  "title": "Nova Tarefa",
+  "topRow": 19,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "4amgm2y5ph",
-  "widgetName": "insert_form"
+  "widgetName": "form"
 }
