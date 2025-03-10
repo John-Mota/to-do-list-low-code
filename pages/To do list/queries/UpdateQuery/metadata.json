@@ -17,12 +17,6 @@
           "data": "ROWS",
           "viewType": "component"
         },
-        "pagination": {
-          "data": {
-            "limit": "20",
-            "offset": "0"
-          }
-        },
         "projection": {
           "data": []
         },
@@ -30,9 +24,6 @@
           "componentData": "ROWS",
           "data": "ROWS",
           "viewType": "component"
-        },
-        "range": {
-          "data": ""
         },
         "rowObjects": {
           "componentData": "{{\n\t{\n\t\t...update_form.formData, \n\t\trowIndex:data_table.selectedRow.rowIndex\n\t}\n}}",
@@ -58,11 +49,6 @@
           "componentData": "1",
           "data": "1",
           "viewType": "component"
-        },
-        "where": {
-          "data": {
-            "condition": "AND"
-          }
         }
       },
       "paginationType": "NONE",
@@ -132,7 +118,6 @@
       "name": "tasks",
       "pluginId": "google-sheets-plugin"
     },
-    "dynamicBindingPathList": [],
     "executeOnLoad": false,
     "name": "UpdateQuery",
     "pageId": "To do list",
