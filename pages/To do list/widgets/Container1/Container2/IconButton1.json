@@ -24,7 +24,7 @@
   "mobileRightColumn": 53,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(Insert_Modal.name);}}",
+  "onClick": "{{showModal(newTask.name);}}",
   "parentColumnSpace": 18.578125,
   "parentId": "b6dv7l8z4y",
   "parentRowSpace": 10,

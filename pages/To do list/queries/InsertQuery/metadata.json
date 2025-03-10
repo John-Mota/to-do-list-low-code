@@ -17,6 +17,12 @@
           "data": "ROWS",
           "viewType": "component"
         },
+        "pagination": {
+          "data": {
+            "limit": "20",
+            "offset": "0"
+          }
+        },
         "projection": {
           "data": []
         },
@@ -52,6 +58,11 @@
           "componentData": "1",
           "data": "1",
           "viewType": "component"
+        },
+        "where": {
+          "data": {
+            "condition": "AND"
+          }
         }
       },
       "paginationType": "NONE",
@@ -121,6 +132,7 @@
       "name": "tasks",
       "pluginId": "google-sheets-plugin"
     },
+    "dynamicBindingPathList": [],
     "executeOnLoad": false,
     "name": "InsertQuery",
     "pageId": "To do list",
