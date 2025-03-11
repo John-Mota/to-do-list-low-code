@@ -23,11 +23,11 @@
   },
   "columnOrder": [
     "rowIndex",
-    "id",
-    "customColumn1",
-    "customColumn2",
+    "status",
+    "Pendente1",
+    "task",
+    "priority",
     "New_Task_editavel",
-    "Pendente",
     "_10_03_2025",
     "Baixa"
   ],
@@ -36,7 +36,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1741734738529,
+  "columnUpdatedAt": 1741735371673,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -83,9 +83,6 @@
       "key": "boxShadow"
     },
     {
-      "key": "primaryColumns.id.computedValue"
-    },
-    {
       "key": "primaryColumns.rowIndex.computedValue"
     },
     {
@@ -107,10 +104,10 @@
       "key": "primaryColumns.customColumn2.menuColor"
     },
     {
-      "key": "primaryColumns.New_Task_editavel.computedValue"
+      "key": "primaryColumns.Pendente1.computedValue"
     },
     {
-      "key": "primaryColumns.Pendente.computedValue"
+      "key": "primaryColumns.New_Task_editavel.computedValue"
     },
     {
       "key": "primaryColumns._10_03_2025.computedValue"
@@ -182,10 +179,10 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "CENTER",
-      "iconName": "delete",
-      "id": "customColumn1",
-      "index": 6,
+      "id": "Baixa",
+      "index": 4,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -216,10 +213,10 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "CENTER",
-      "iconName": "updated",
-      "id": "customColumn2",
-      "index": 7,
+      "id": "New_Task_editavel",
+      "index": 1,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -239,22 +236,21 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "Pendente": {
+    "Pendente1": {
       "alias": "Pendente",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "date",
-      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"due_date\"]))}}",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Pendente\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
-      "id": "due_date",
-      "index": 3,
-      "inputFormat": "Milliseconds",
+      "id": "Pendente1",
+      "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -265,8 +261,7 @@
       "isVisible": true,
       "label": "Pendente",
       "notation": "standard",
-      "originalId": "due_date",
-      "outputFormat": "DD/MM/YYYY",
+      "originalId": "Pendente",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -288,8 +283,8 @@
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
-      "id": "id",
-      "index": 0,
+      "id": "_10_03_2025",
+      "index": 3,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -384,40 +379,6 @@
       "onClick": "{{showModal(update_modal.name);}}",
       "originalId": "customColumn2",
       "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "id": {
-      "alias": "id",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "number",
-      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "status",
-      "index": 2,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "id",
-      "notation": "standard",
-      "originalId": "id",
-      "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
