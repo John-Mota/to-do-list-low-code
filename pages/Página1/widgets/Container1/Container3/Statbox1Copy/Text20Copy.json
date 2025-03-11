@@ -14,6 +14,9 @@
     },
     {
       "key": "text"
+    },
+    {
+      "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -43,7 +46,7 @@
   "shouldTruncate": false,
   "text": "{{TaskUtils.countPendingTasks().completedTasksPercent}}%",
   "textAlign": "CENTER",
-  "textColor": "#03B365",
+  "textColor": "{{appsmith.theme.colors.primaryColor}}",
   "topRow": 8,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
