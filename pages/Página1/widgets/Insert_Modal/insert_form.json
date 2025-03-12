@@ -136,40 +136,40 @@
       "key": "schema.__root_schema__.children.id.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.task.defaultValue"
+      "key": "schema.__root_schema__.children.New_Task_editavel.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.task.borderRadius"
+      "key": "schema.__root_schema__.children.New_Task_editavel.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.task.accentColor"
+      "key": "schema.__root_schema__.children.New_Task_editavel.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.status.defaultValue"
+      "key": "schema.__root_schema__.children.Pendente.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.status.borderRadius"
+      "key": "schema.__root_schema__.children.Pendente.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.status.accentColor"
+      "key": "schema.__root_schema__.children.Pendente.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.due_date.defaultValue"
+      "key": "schema.__root_schema__.children._10_03_2025.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.due_date.borderRadius"
+      "key": "schema.__root_schema__.children._10_03_2025.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.due_date.accentColor"
+      "key": "schema.__root_schema__.children._10_03_2025.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.priority.defaultValue"
+      "key": "schema.__root_schema__.children.Baixa.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.priority.borderRadius"
+      "key": "schema.__root_schema__.children.Baixa.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.priority.accentColor"
+      "key": "schema.__root_schema__.children.Baixa.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -224,27 +224,93 @@
       "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "cellBoxShadow": "none",
       "children": {
-        "due_date": {
+        "Baixa": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "due_date",
+          "accessor": "Baixa",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.due_date))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Baixa))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
           "iconAlign": "left",
-          "identifier": "due_date",
+          "identifier": "Baixa",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Due Date",
+          "label": "Baixa",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "due_date",
+          "originalIdentifier": "Baixa",
+          "position": 5,
+          "sourceData": "Baixa"
+        },
+        "New_Task_editavel": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "New Task editavel",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"New Task editavel\"]))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "New_Task_editavel",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "New Task Editavel",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "New Task editavel",
+          "position": 2,
+          "sourceData": "Pagar contas update"
+        },
+        "Pendente": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "Pendente",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Pendente))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "Pendente",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Pendente",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "Pendente",
+          "position": 3,
+          "sourceData": "Pendente"
+        },
+        "_10_03_2025": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "10-03-2025",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"10-03-2025\"]))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "_10_03_2025",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "10 03 2025",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "10-03-2025",
           "position": 4,
-          "sourceData": 1741132800000
+          "sourceData": 1741564800000
         },
         "id": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -268,28 +334,6 @@
           "position": 1,
           "sourceData": 1
         },
-        "priority": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "priority",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.priority))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "priority",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Priority",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "priority",
-          "position": 5,
-          "sourceData": "Média"
-        },
         "rowIndex": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "rowIndex",
@@ -311,50 +355,6 @@
           "originalIdentifier": "rowIndex",
           "position": 0,
           "sourceData": 0
-        },
-        "status": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "status",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.status))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "status",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Status",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "status",
-          "position": 3,
-          "sourceData": "Pendente"
-        },
-        "task": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "accessor": "task",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.task))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "task",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Task",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "task",
-          "position": 2,
-          "sourceData": "Comprar leite"
         }
       },
       "dataType": "object",
